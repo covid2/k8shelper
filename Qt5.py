@@ -5,7 +5,6 @@ from PyQt5.QtCore import *
 import sys
 import getgcpprojects
 
-
 class Window(QMainWindow):
 
     def __init__(self):
