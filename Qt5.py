@@ -5,6 +5,7 @@ from PyQt5.QtCore import *
 import sys
 import getgcpprojects
 
+
 class Window(QMainWindow):
 
     def __init__(self):
@@ -73,7 +74,7 @@ class Window(QMainWindow):
         # finding the content of current item in combo box
         project = self.cboproject.currentText()
         k8s = self.cbok8slist.currentText()
-        cluster = k8s.replace("\r", "") .replace("\n","")
+        cluster = k8s.replace("\r", "").replace("\n", "")
         print("Cluster", cluster)
         # showing content on the screen though label
         self.label.setText("Connecting  : " + cluster + " in " + project + "..")
